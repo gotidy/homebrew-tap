@@ -5,13 +5,13 @@
 class X2c < Formula
   desc "Convert XLSX file to CSV"
   homepage "https://github.com/gotidy/x2c"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gotidy/x2c/releases/download/v0.1.1/x2c_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "ddc9b80f1e637632f854be1b7d4263ffef66ebad9b5a04b5f46dceaed3a0f183"
+      url "https://github.com/gotidy/x2c/releases/download/v0.1.2/x2c_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "79030fa06b58f6b68fff027513dda724e4c298864009c7aea887762d66ae1117"
 
       def install
         bin.install "x2c"
@@ -21,8 +21,8 @@ class X2c < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gotidy/x2c/releases/download/v0.1.1/x2c_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "6b3806dd72b3190665b9193205780b311904aede083ab750d1c6ae39a0860f9d"
+      url "https://github.com/gotidy/x2c/releases/download/v0.1.2/x2c_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "ba512b628f4627681c96813c3c4822cb7f98339f26edce33933412cf9ef97908"
 
       def install
         bin.install "x2c"
@@ -35,8 +35,8 @@ class X2c < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gotidy/x2c/releases/download/v0.1.1/x2c_0.1.1_Linux_arm64.tar.gz"
-      sha256 "d45f4454af98715da12e5266e1c77df005999fffaf8f8c0e1f961949387b224f"
+      url "https://github.com/gotidy/x2c/releases/download/v0.1.2/x2c_0.1.2_Linux_arm64.tar.gz"
+      sha256 "b76721f6dd1fd89ad46870465ae5125148a4f740f5b77eb8c2e660cf644bf1f0"
 
       def install
         bin.install "x2c"
@@ -46,8 +46,8 @@ class X2c < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gotidy/x2c/releases/download/v0.1.1/x2c_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "ab7ecd57f052dfc55bf11e7b9487d0469bb81443958dba15e54610e250019094"
+      url "https://github.com/gotidy/x2c/releases/download/v0.1.2/x2c_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "ecbb077ec3fe724ca2209967f3f9a76cf1c1a368a941f21b432024fab2a85837"
 
       def install
         bin.install "x2c"
